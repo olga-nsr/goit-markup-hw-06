@@ -886,7 +886,7 @@ outline: 1px solid transparent;
 .modal-form-aqreement-link {
   color: var(--accent-color);
 }
-
+/*
 .modal-form-checkbox {
   appearance: none;
   width: 15px;
@@ -916,7 +916,7 @@ background-size: 11px 8px;
   color: var(--accent-color);
   text-underline-position: under;
 }
-
+*/
 
 
 .modal-form-btn {
