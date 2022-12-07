@@ -918,6 +918,24 @@ background-size: 11px 8px;
 }
 */
 
+.uncheck {
+  opacity: 1;
+  transition: 250ms;
+}
+.modal-form-checkbox:checked +
+.modal-form-aqreement-icon .uncheck {
+  opacity: 0;
+}
+
+.check {
+  opacity: 0;
+  transition: 250ms;
+}
+.modal-form-checkbox:checked +
+.modal-form-aqreement-icon .check {
+  opacity: 1;
+}
+
 
 .modal-form-btn {
   display: block;
