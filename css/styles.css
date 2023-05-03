@@ -1,5 +1,5 @@
 :root {
-  --main-title-color: #ffffff;
+  --main-title-color: #F4F4FD;
   --background-main-color: #ffffff;
   --sacondary-title-color: #212121;
   --text-title-color: #757575;
@@ -365,22 +365,8 @@ margin-right: 30px;
 .dev-item {
   position:relative;
 }
-.overlay {
-position: absolute;
-bottom: 0;
-padding-top: 27px;
-padding-bottom: 27px;
-width: 100%;
-background: rgba(47, 48, 58, 0.8);
-backdrop-filter: blur(2px);
-}
-.overlay-text {
-  text-transform: uppercase;
-text-align: center;
-color: var(--main-title-color);
-font-weight: 700;
 
-}
+
 
 /**
   |============================
@@ -431,11 +417,12 @@ background-color:#F5F4FA;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 44px;
-height: 44px;
+width: 40px;
+height: 40px;
 border-radius: 50%;
-background: var(--background-mail-color);
-fill: #AFB1B8;
+background: var(--accent-color);
+fill: #F4F4FD;
+
 transition-property: background-color, fill;
 transition-duration: 250ms;
 transition-timing-function: ease-out;
@@ -443,8 +430,9 @@ transition-timing-function: ease-out;
 
 .socials-link:hover,
 .socials-link:focus  {
-  background-color: var(--accent-color);
+  background-color:  #3645ee;
   fill: var(--main-title-color);
+  
 }
 /**
   |============================
@@ -512,18 +500,30 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .logo-footer {
   font-family: 'Raleway';
   font-style: normal;
-  font-size: 26px;
+  font-size: 18px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  text-transform: uppercase;
 }
 .logo-footer-span {
   color: var(--main-title-color);
 }
-.address {
+.footer-wrapper{
  margin-top: 20px;
+ }
+.address-discription {
+  color:#F4F4FD;
+ width: 264px;
+ font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+letter-spacing: 0.02em;
+
 }
-.address-list {
+/* .address-list {
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -545,7 +545,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .footer-address-link:hover,
 .footer-address-link:focus {
   color: var(--accent-color);
-}
+} */
 
 .socials-footer-dark {
 display: flex;
