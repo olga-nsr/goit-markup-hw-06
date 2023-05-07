@@ -120,13 +120,13 @@ address {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+  
 }
 .container {
   width: 1160px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  
 
   outline: 2px solid red;
   outline-offset: -2px;
