@@ -13,7 +13,7 @@
 
 
   --btn-radius: 25px;
-  --indent: 30px;
+  --indent: 24px;
   --items: 3;
   --header-idx: 10;
   --modal-idx: 100;
@@ -29,8 +29,8 @@
 */
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
+  font-size: 16px;
+  letter-spacing: 0.02em;
   background-color: var(--main-title-color);
   color: var(--sacondary-title-color);
 }
@@ -118,11 +118,11 @@ address {
   text-decoration: none;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .container {
-  width: 1200px;
+  width: 1160px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -169,12 +169,12 @@ html {
 .header-list {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
   margin-right: auto;
 }
 .header-list-cont {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   align-items: center;
 }
 .nav-link {
@@ -182,11 +182,12 @@ html {
   bottom: 0;
   display: block;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
+  
   line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
+  
   color: var(--sacondary-title-color);
   align-items: center;
 
@@ -225,17 +226,18 @@ html {
   bottom: 0;
   display: flex;
   align-content: center;
-  font-weight: 500;
+  font-weight: 400;
+  
   line-height: calc(16 / 12);
-  letter-spacing: 0.02em;
+  
   color: var(--text-title-color);
  margin-right: auto;
- gap: 10px;
+ 
 
  justify-content: center;
   align-items: center;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-bottom: 24px;
+  padding-top: 24px;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -263,12 +265,12 @@ html {
 
 
 .hero {
-  max-width: 1600px;
+  max-width: 1440px;
   margin: 0 auto;
   background-color: #2f303a;
   text-align: center;
-  padding-top : 200px;
-  padding-bottom: 200px;
+  padding-top : 188px;
+  padding-bottom: 292px;
   background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -293,7 +295,7 @@ url(../img/people-hero.jpg);
   min-width: 169px;
   min-height: 56px;
   font-weight: 500;
-  font-size: 16px;
+  
   line-height: calc(24 / 16);
   letter-spacing: 0.04em;
   color: var(--main-title-color);
@@ -302,7 +304,7 @@ url(../img/people-hero.jpg);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
     border: none;
-  margin-top: 30px;
+  margin-top: 48px;
   cursor: pointer;
 }
 
@@ -317,13 +319,15 @@ url(../img/people-hero.jpg);
 .about-tittle-img{
   content: "";
   display: flex;
-  height: 120px;
-  align-items: center;
+    align-items: center;
   justify-content: center;
 background-repeat: no-repeat;
 background-position: center;
-background-color:#F5F4FA;
+
+height: 112px;
+background-color: var(--text-color);
 border-radius: 4px;
+box-sizing: content-box;
 }
 
 .about-list {
@@ -333,13 +337,13 @@ border-radius: 4px;
 }
 
 .about-sub-tittle {
-  font-size: 14px;
-  line-height: calc(16 / 14);
-margin-top: 30px;
-margin-bottom: 10px;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+margin-top: 8px;
+margin-bottom: 8px;
 }
 .about-description {
-  line-height: 24px;
+ line-height: calc(24 / 16);
 
   color: var(--text-title-color);
 }
