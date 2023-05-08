@@ -7,6 +7,7 @@
   --text-color: #F4F4FD;
   --accent-color:  #4D5AE5;
   --accent-color-text: #404BBF;
+  --accent-color-hover: #31D0AA;
   --items: 3;
 
 
@@ -47,7 +48,7 @@ body {
 }
 
 .card-set-item {
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 72px) / 3);
 }
 
 
@@ -123,7 +124,7 @@ address {
   
 }
 .container {
-  width: 1130px;
+  width: 1134px;
   margin-right: auto;
   margin-left: auto;
   
@@ -186,7 +187,7 @@ html {
   padding-bottom: 24px;
   font-weight: 500;
   
-  line-height: calc(16 / 14);
+  line-height: calc(24 / 16);
   
   color: var(--sacondary-title-color);
   align-items: center;
@@ -306,16 +307,21 @@ url(../img/people-hero.jpg);
     border: none;
   margin-top: 48px;
   cursor: pointer;
+  transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.hero-button:hover,
+  .hero-button:hover {
+    background-color: var(--accent-color-text);
+  }
 
 /**
   |============================
   |        Особливості
   |============================
 */
-.about {
-  padding-bottom: none;
-}
+
 .about-tittle-img{
   content: "";
   display: flex;
@@ -440,8 +446,8 @@ transition-timing-function: ease-out;
 
 .socials-link:hover,
 .socials-link:focus  {
-  background-color:  #3645ee;
-  fill: var(--main-title-color);
+  background-color:  var(--accent-color-text);
+  fill: var(--text-color);
   
 }
 /**
@@ -452,29 +458,29 @@ transition-timing-function: ease-out;
 
 .clients-title {
   font-size: 36px;
-  line-height: calc(42 / 36);
+  line-height: calc(40 / 36);
   text-align: center;
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
 .clients-list {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 24px;
 
 }
 .clients-item{
-  width: 170px;
-  height: 92px;
+  width: 168px;
+  height: 88px;
 }
 .clients-link {
 display: flex;
 justify-content: center;
   align-items: center;
-  fill:#AFB1B8;
+  fill:#8E8F99;
   width: 100%;
   height: 100%;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #8E8F99;
   border-radius: 4px;
   transition-property: border, fill;
 transition-duration: 250ms;
@@ -483,8 +489,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  border: 1px solid var(--accent-color-text);
+  fill: var(--accent-color-text);
 }
 
 /**
@@ -571,8 +577,8 @@ justify-content: center;
 .footer-title {
   text-transform: uppercase;
   color: var(--text-color);
-      margin-bottom: 20px;
-      font-weight: 700;
+      margin-bottom: 16px;
+      font-weight: 500;
     }
 
 .socials-link-dark {
@@ -591,7 +597,7 @@ justify-content: center;
 }
 .socials-link-dark:hover,
 .socials-link-dark:focus  {
-  background-color: #202fcf;
+  background-color: var(--accent-color-hover);
   fill: var(--main-title-color);
 }
 
@@ -605,7 +611,7 @@ justify-content: center;
   padding: 16px;
 
   width: 264px;
-  height: 41;
+  height: 40px;
   margin-right: 24px;
    
   background-color: var(--sacondary-title-color);
@@ -624,7 +630,7 @@ justify-content: center;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(24 / 16);
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     color: var(--main-title-color);
     cursor: pointer;
     background: var(--accent-color);
@@ -633,7 +639,16 @@ justify-content: center;
       border: none;
       justify-content: center;
     align-items: center;
+    transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .footer-button:hover,
+  .footer-button:hover {
+    background-color: var(--accent-color-text);
+  }
+
+
 
 
 
@@ -644,8 +659,8 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
-   gap: 8px;
-margin-bottom: 50px;
+   gap: 24px;
+margin-bottom: 72px;
 }
 .button {
   min-width: 116px;
@@ -687,8 +702,8 @@ color: var(--accent-color);
 }
 
 .portfolio-wrapper {
-  border:1px solid #EEEEEE;
-  padding: 20px 24px;
+  border:1px solid #E7E9FC;
+  padding: 32px 16px;
 }
 .card-set-item {
   transition-property: box-shadow;
