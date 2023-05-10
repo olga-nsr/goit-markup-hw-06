@@ -817,9 +817,11 @@ transition: transform 250ms,  opacity 250ms;
   padding: 0;
   margin-top: 24px;
   margin-right: 24px;
-  
- 
-    display: flex;
+
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -851,18 +853,18 @@ cursor: pointer;
 }
 .modal-form-wraper {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
 
 
 }
 .modal-form-field {
   width: 100%;
-  height: 41px;
-  padding-left: 42px;
-  padding-right: 42px;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 40px;
+  padding-left: 38px;
+  padding-right: 38px;
+color: #000;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: 1px solid transparent;
   outline-offset:-1px;
@@ -893,7 +895,7 @@ width: 100%;
 height: 120px;
 padding: 16px 20px;
 font-size: 14px;
-color: var(--sacondary-title-color)
+color: var(--sacondary-title-color);
 resize: none;
 border-radius: 4px;
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -927,7 +929,10 @@ outline: 1px solid transparent;
 .modal-form-aqreement-link {
   color: var(--accent-color);
 }
-/*
+
+
+/* ----коментарий--- */
+/* 
 .modal-form-checkbox {
   appearance: none;
   width: 15px;
@@ -956,9 +961,9 @@ background-size: 11px 8px;
 .modal-form-aqreement-link {
   color: var(--accent-color);
   text-underline-position: under;
-}
-*/
+} */
 
+/* -----Коментарий  */
 .uncheck {
   opacity: 1;
   transition: 250ms;
